@@ -43,6 +43,7 @@
           "options": {
             "outputPath": "dist/encryptor-app",
             "index": "src/index.html",
+            "baseHref": "/Encript_Desencript/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -57,7 +58,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+
+            "allowedCommonJsDependencies": [
+              "crypto-js"
+            ]
           },
           "configurations": {
             "production": {
@@ -117,8 +122,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "68d40516-b27f-4cbf-88c8-b042e20b73c2"
   }
 }

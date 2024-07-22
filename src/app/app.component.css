@@ -1,0 +1,14 @@
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 5px;
+}
