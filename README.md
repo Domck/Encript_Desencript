@@ -29,8 +29,6 @@ Esta aplicación web permite la **encriptación** y **desencriptación** de text
 4. Los resultados se muestran instantáneamente en pantalla.
 
 ## **Requisitos**
-
-- **Node.js** (versión 14 o superior).
 - Angular CLI instalado:
   ```bash
   npm install -g @angular/cli
