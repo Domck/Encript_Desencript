@@ -1,27 +1,37 @@
-# EncryptorApp
+# Aplicación Web de Encriptación y Desencriptación
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
+Esta aplicación web permite la **encriptación** y **desencriptación** de texto de manera segura y eficiente. Desarrollada en **TypeScript**, utiliza algoritmos avanzados para garantizar la privacidad y seguridad de los datos procesados.
 
-## Development server
+## **Características**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Encriptación AES**: Implementación del algoritmo AES (Advanced Encryption Standard) para proteger datos sensibles.
+- **Desencriptación**: Permite recuperar datos cifrados a su forma original, siempre que se utilicen las claves correctas.
+- **Compatibilidad de caracteres**: Soporte completo para caracteres alfanuméricos y especiales.
+- **Entrada dinámica de claves**: El usuario proporciona una clave y un salt para realizar las operaciones, garantizando flexibilidad y seguridad.
+- **Interfaz responsiva**: Diseñada para adaptarse tanto a dispositivos móviles como a pantallas de escritorio.
 
-## Code scaffolding
+## **Tecnologías Utilizadas**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Frontend**:
+  - **TypeScript**: Lenguaje principal para la lógica de la aplicación.
+  - **Angular**: Framework utilizado para la gestión de componentes y vistas.
+  - **Bootstrap**: Para un diseño moderno y responsivo.
+- **Librerías**:
+  - `CryptoJS`: Para la encriptación y desencriptación.
 
-## Build
+## **Cómo Funciona**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. El usuario ingresa un texto, una clave y un salt en el formulario.
+2. **Encriptación**:
+   - El sistema utiliza la clave y el salt para cifrar el texto con AES.
+3. **Desencriptación**:
+   - El texto cifrado puede descifrarse utilizando la misma clave y salt originales.
+4. Los resultados se muestran instantáneamente en pantalla.
 
-## Running unit tests
+## **Requisitos**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Node.js** (versión 14 o superior).
+- Angular CLI instalado:
+  ```bash
+  npm install -g @angular/cli
+![image](https://github.com/user-attachments/assets/d91fb494-06f2-445c-bc64-849e2685425e)
